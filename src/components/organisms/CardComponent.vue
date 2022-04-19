@@ -34,10 +34,13 @@ export default {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
   width: 240px;
+  position: relative;
 
-  padding: 1.5rem 0.8rem;
+  padding: 2rem .8rem 1.5rem;
   .info {
-    text-align: right;
+    position: absolute;
+    right: 10px;
+    top: 10px;
   }
 
   .content-card {
@@ -46,8 +49,8 @@ export default {
     gap: 1rem;
 
     .icon {
-      width: 70px;
-      height: 70px;
+      width: 65px;
+      height: 65px;
       border-radius: 50%;
       background: $green-1;
       display: flex;

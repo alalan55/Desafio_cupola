@@ -27,7 +27,7 @@ import Card from "@/components/organisms/CardComponent.vue";
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 2.5rem;
 
     .card {
       margin: 1rem 0;

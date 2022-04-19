@@ -1,11 +1,12 @@
 <script setup>
 // import HelloWorld from './components/HelloWorld.vue'
 // import TheWelcome from './components/TheWelcome.vue'
+import Card from '@/components/card/CardComponent.vue'
 </script>
 
 <template>
  <main>
-   Olá
+   <Card/>
  </main>
 </template>
 

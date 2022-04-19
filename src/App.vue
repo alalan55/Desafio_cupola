@@ -1,11 +1,12 @@
 <script setup>
-// import HelloWorld from './components/HelloWorld.vue'
-// import TheWelcome from './components/TheWelcome.vue'
-import Home from '@/components/templates/HomeTemplate.vue'
+import Home from "@/components/templates/HomeTemplate.vue";
+import { informations } from "@/mock";
+
+const informationsData = informations;
 </script>
 
 <template>
- <main>
-   <Home/>
- </main>
+  <main>
+    <Home :informations="informationsData" />
+  </main>
 </template>

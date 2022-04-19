@@ -1,15 +1,29 @@
 <template>
   <div class="home-template">
     <div class="content-home">
-      <Card class="card" />
-      <Card class="card" />
-      <Card class="card" />
+      <Card
+        class="card"
+        v-for="item in informations"
+        :cardData="item"
+        :key="item.id"
+      />
     </div>
   </div>
 </template>
 
-<script setup>
+<script>
 import Card from "@/components/organisms/CardComponent.vue";
+export default {
+  components: {
+    Card,
+  },
+  props: {
+    informations: { type: Array, required: true, default: undefined },
+  },
+  setup() {
+    return {};
+  },
+};
 </script>
 
 <style lang="scss" scoped>

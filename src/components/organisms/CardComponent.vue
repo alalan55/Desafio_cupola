@@ -4,15 +4,15 @@
       <img src="/icons/info-icon.svg" alt="Info icon" />
     </figure>
     <div class="content-card">
-      <div class="icon">
-        <img src="/icons/currency-icon.svg" alt="Icon" />
+      <div class="icon" :style="{background: cardData.color}">
+        <img :src="cardData.img" alt="Icon" />
       </div>
       <div class="descriptions">
         <div class="title">
-          <span>2.5 M</span>
+          <span>{{cardData.title}}</span>
         </div>
         <div class="sub-title">
-          <span>Conversões</span>
+          <span>{{cardData.subTitle}}</span>
         </div>
       </div>
     </div>
@@ -21,6 +21,9 @@
 
 <script>
 export default {
+  props:{
+    cardData: {type: Object, required: true}
+  },
   setup() {
     return {};
   },

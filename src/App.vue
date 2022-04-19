@@ -1,15 +1,11 @@
 <script setup>
 // import HelloWorld from './components/HelloWorld.vue'
 // import TheWelcome from './components/TheWelcome.vue'
-import Card from '@/components/card/CardComponent.vue'
+import Home from '@/components/templates/HomeTemplate.vue'
 </script>
 
 <template>
  <main>
-   <Card/>
+   <Home/>
  </main>
 </template>
-
-<style>
-
-</style>

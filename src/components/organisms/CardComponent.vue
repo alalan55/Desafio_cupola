@@ -35,7 +35,7 @@ export default {
     cardData: { type: Object, required: true },
   },
   setup() {
-    const showTooltip = ref(false);
+    const showTooltip = ref(true);
     const showOrHideTooltip = () => {
       showTooltip.value == true
         ? (showTooltip.value = false)
@@ -79,9 +79,9 @@ export default {
       &::after {
         content: "";
         position: absolute;
-        left: 90%;
-        bottom: -29px;
-        border-width: 12px;
+        left: 86%;
+        bottom: -38px;
+        border-width: 20px;
         border-style: solid;
         border-color: $deep-blue-3 transparent transparent transparent;
         z-index: 99;

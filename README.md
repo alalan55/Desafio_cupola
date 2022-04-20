@@ -4,6 +4,8 @@ Desafio consiste em construir 3 indicadores, utilizando o framework vuejs
 
 Esse template foi construido utilizando vite e vue 3, usando principios de atomic design :atom:
 
+Se quiser ver uma versão já hospedada, só clicar no link https://desafio-cupola.vercel.app/ 😄
+
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).

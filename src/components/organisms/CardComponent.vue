@@ -53,9 +53,9 @@ export default {
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
-  width: 240px;
+  width: 245px;
   position: relative;
-  padding: 2rem 1.2rem 1.5rem;
+  padding: 2.2rem 1.2rem 1.5rem;
 
   .info-tooltip {
     position: absolute;
@@ -100,8 +100,8 @@ export default {
     gap: 1rem;
 
     .icon {
-      width: 65px;
-      height: 65px;
+      width: 60px;
+      height: 60px;
       border-radius: 50%;
       background: $green-1;
       display: flex;

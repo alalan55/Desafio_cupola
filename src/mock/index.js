@@ -19,7 +19,7 @@ export const informations = [
         id: 2,
         title: 'R$ 10',
         subTitle: 'Custo por lead',
-        hover: 'è o cálculo do investimento utilizado pela quantidade de leads gerados no período.',
+        hover: 'É o cálculo do investimento utilizado pela quantidade de leads gerados no período.',
         img: '/icons/currency-icon.svg',
         color: '#bff0cc'
     },

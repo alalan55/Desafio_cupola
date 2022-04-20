@@ -1,18 +1,27 @@
 <template>
   <div class="card">
-    <figure class="info">
+    <div class="info-tooltip" v-if="showTooltip">
+      <div class="content-tooltip">
+        <span>{{ cardData.hover }}</span>
+      </div>
+    </div>
+    <figure
+      class="info"
+      @mouseenter="showOrHideTooltip"
+      @mouseleave="showOrHideTooltip"
+    >
       <img src="/icons/info-icon.svg" alt="Info icon" />
     </figure>
     <div class="content-card">
-      <div class="icon" :style="{background: cardData.color}">
+      <div class="icon" :style="{ background: cardData.color }">
         <img :src="cardData.img" alt="Icon" />
       </div>
       <div class="descriptions">
         <div class="title">
-          <span>{{cardData.title}}</span>
+          <span>{{ cardData.title }}</span>
         </div>
         <div class="sub-title">
-          <span>{{cardData.subTitle}}</span>
+          <span>{{ cardData.subTitle }}</span>
         </div>
       </div>
     </div>
@@ -20,12 +29,20 @@
 </template>
 
 <script>
+import { ref } from "vue";
 export default {
-  props:{
-    cardData: {type: Object, required: true}
+  props: {
+    cardData: { type: Object, required: true },
   },
   setup() {
-    return {};
+    const showTooltip = ref(false);
+    const showOrHideTooltip = () => {
+      showTooltip.value == true
+        ? (showTooltip.value = false)
+        : (showTooltip.value = true);
+    };
+
+    return { showTooltip, showOrHideTooltip };
   },
 };
 </script>
@@ -38,8 +55,39 @@ export default {
   border-radius: 8px;
   width: 240px;
   position: relative;
+  padding: 2rem 1.2rem 1.5rem;
 
-  padding: 2rem .8rem 1.5rem;
+  .info-tooltip {
+    position: absolute;
+    top: -75px;
+    left: -11px;
+    right: -11px;
+    background: $deep-blue-3;
+    padding: 0.5rem 0.8rem .66rem;
+    border-radius: 10px;
+    .content-tooltip {
+      width: 100%;
+      position: relative;
+      span {
+        font-size: 0.8em;
+        color: white;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 140%;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 90%;
+        bottom: -29px;
+        border-width: 12px;
+        border-style: solid;
+        border-color: $deep-blue-3 transparent transparent transparent;
+        z-index: 99;
+      }
+    }
+  }
   .info {
     position: absolute;
     right: 10px;

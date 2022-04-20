@@ -41,7 +41,7 @@ export default {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2.5rem;
+    gap: 2.3rem 2.5rem;
 
     .card {
       margin: 1rem 0;

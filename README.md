@@ -1,6 +1,8 @@
-# desafio-cupola
+# Desafio Cupola
 
-This template should help get you started developing with Vue 3 in Vite.
+Desafio consiste em construir 3 indicadores, utilizando o framework vuejs
+
+Esse template foi construido utilizando vite e vue 3, usando principios de atomic design :atom:
 
 ## Recommended IDE Setup
 

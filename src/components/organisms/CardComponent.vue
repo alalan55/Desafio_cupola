@@ -63,7 +63,7 @@ export default {
     left: -11px;
     right: -11px;
     background: $deep-blue-3;
-    padding: 0.5rem 0.8rem .66rem;
+    padding: 0.5rem 0.8rem 0.66rem;
     border-radius: 10px;
     .content-tooltip {
       width: 100%;
@@ -79,9 +79,9 @@ export default {
       &::after {
         content: "";
         position: absolute;
-        left: 90%;
-        bottom: -29px;
-        border-width: 12px;
+        left: 86%;
+        bottom: -38px;
+        border-width: 20px;
         border-style: solid;
         border-color: $deep-blue-3 transparent transparent transparent;
         z-index: 99;
